@@ -1,0 +1,41 @@
+# Virtual environments
+.venv/
+venv/
+.appvenv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local project artifacts
+models/
+experiments/
+data/
+.tfds/
+*.h5
+*.keras
+*.ckpt
+*.weights.h5
+*.pkl
+*.joblib
+*.onnx
+
+# Environment files
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

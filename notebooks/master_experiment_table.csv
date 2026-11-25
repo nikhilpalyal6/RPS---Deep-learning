@@ -1,0 +1,5 @@
+Experiment,Architecture Change,Expected Result,Train Acc,Val Acc,Test Acc,Test Loss,Params,Result
+Baseline CNN,3 Conv blocks (32-64-128),Reference point,99.20634627342224,99.60317611694336,84.95,0.6262,101699,-
+Simpler CNN,Removed the Conv128 block,"Lower capacity, maybe better generalization",95.73412537574768,95.03968358039856,60.752689838409424,1.1562308073043823,23747,Worse (-24.20 pts)
+Deeper CNN,Added a Conv256 block,Better feature extraction,100.0,100.0,85.75268983840942,0.5734155178070068,405059,About the same
+Regularized CNN,Deeper CNN + Dropout(0.5) after GAP,Smaller generalization gap,99.80158805847168,100.0,100.0,0.011064569465816021,405059,Better (+15.05 pts)
